@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr" id="#html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="site, internet, web, développeur, html, css, php, hébergement, programmeur, vitrine">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Matthieu PEREZ</title>
+</head>
+
+<header>
+    <!-- Navigation -->
+    <nav class="sticky-top">
+        <h1 class="logo">Matthieu PEREZ</h1>
+        <h3 class="m-1 span loader">
+            <span>D</span>
+            <span>é</span>
+            <span>v</span>
+            <span>e</span>
+            <span>l</span>
+            <span>o</span>
+            <span>p</span>
+            <span>p</span>
+            <span>e</span>
+            <span>m</span>
+            <span>e</span>
+            <span>n</span>
+            <span>t</span>
+            <span>&nbsp;</span>
+            <span>w</span>
+            <span>e</span>
+            <span>b</span>
+        </h3>
+        <ul>
+            <li><a href="pages/devis.html">Devis</a></li>
+            <li><a href="pages/productions.html">Test</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body class="body">
+    <main>
+
+        <section>
+            <div class="dec il">
+                <h3>Les polices de caractères :</h3>
+                <button class="btn ml-1 mr-1" onclick=policeReduce()>Plus petit</button>
+                <button class="btn mr-1" onclick=myNormal()>Normal</button>
+                <button class="btn mr-1" onclick=policeIncrease()>Plus grand</button>
+            </div>
+            <div class="dec il">
+                <h3>Les fonds d'écran :</h3>
+                <button class="btn ml-1 mr-1" onclick = "changeBgColor('rgb(128, 128, 238)');">Couleur initiale</button>
+                <button class="btn mr-1" onclick = "changeBgColor('blue');">Bleu</button>
+                <button class="btn mr-1" onclick = "changeBgColor('darkgray');">Gris</button>
+                <button class="btn mr-1" onclick = "changeBgColor('red');">Rouge</button>
+                <button class="btn mr-1" onclick = "changeBgColor('green');">Vert</button>
+                <button class="btn mr-1" onclick = "changeBgColor('yellow');">Jaune</button>
+            </div>
+            <div class="dec il">
+                <h3>Les dates :</h3>
+                <button class="btn ml-1 mr-1" onclick="myDate()">Date/heure</button>
+                <button class="btn mr-1" onclick="nextSat()">Samedi prochain</button>
+            </div>
+        </section>
+
+        <section class="test dec date">La date et l'heure s'affichent ici.</section>
+        <section class="test dec sat">Le samedi prochain s'affiche ici.</section>
+
+        <section id=#myJsZone>
+            <div class="dec">
+                <h1 class="centered">Bienvenue sur mon site <span onclick="myName()"
+                        class="superlink0 myName">visiteur</span> !</h1>
+                <p>Si vous cherchez un développeur indépendant basé en France pour vous créer un site web, vous
+                    êtes tombé sur la bonne page. Entre toutes les pages promotionnelles qui circulent sur les réseaux,
+                    ce n'est pas facile de s'y retrouver. Ne vous en inquiétez pas, je vais éclairer votre lanterne.
+                    Voici ce que vous pouvez avoir en demandant les services d'un développeur web.</p>
+                <p>Si vous cherchez à avoir un site à votre nom, un site qui vous ressemble, voilà ce qu'un développeur
+                    pourra vous proposer :</p>
+                <ul>
+                    <li>Un site dynamique avec machinerie qui fonctionne en arrière-plan, avec de nombreuses
+                        fonctionnalités, comme un site de e-commerce</li>
+                    <li>Un site "statique" qui augmente considérablement votre visibilité sur le web, que vous pourrez
+                        partager sur les réseaux</li>
+                </ul>
+                <p id="#demo">Les sites statiques reviennent à la mode. Ils coûtent beaucoup moins chers que les sites
+                    dynamiques et permettent de présenter à la clientèle l'activité d'une entreprise, d'afficher un
+                    portfolio ou de diriger des clients vers un établissement physique. Mais ils ne sont pas pourtant
+                    autant immobiles. "Statique" signifie simplement qu'ils sont juste une vitrine pour votre
+                    entreprise. Grâce au langage javascript, on peut réaliser de nombreuses animations intéressantes. Par exmeple, ce site est un site statique.
+                </p>
+            </div>
+        </section>
+        <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quibusdam esse aliquid odit eum atque similique, corporis autem distinctio placeat veritatis, quaerat, harum veniam quia cumque? Natus corporis perferendis dolores nemo inventore sequi magni quia. Ullam eos quis dignissimos voluptate quidem velit neque ipsam, vero qui minus sequi doloribus labore explicabo omnis totam vitae nihil aliquid odit sint eius! Ipsa dolor optio natus! Eius sequi quod dolor, tempore id, officiis a iure ipsum iusto quasi eum nihil perspiciatis placeat! Voluptates nemo ullam totam laudantium repellat quasi at dolor soluta? Eum quos voluptas cupiditate hic expedita a quia natus, temporibus mollitia rem, numquam doloribus dolore iste debitis unde, et quibusdam iure error minima placeat nihil nemo quod laborum fugit! Placeat delectus eaque expedita voluptates, pariatur at similique dolor distinctio commodi alias accusantium maxime quasi labore, esse quae voluptatum unde sit? Ipsa sequi, placeat quo, voluptatum ea, incidunt et praesentium aliquam aperiam obcaecati harum. Quisquam nesciunt asperiores culpa consequatur consequuntur amet fugiat maiores provident nobis nemo natus aliquid eum voluptatem aliquam quae dolorum, quasi praesentium! Repellat ea excepturi, explicabo corporis quae fuga incidunt, dolorum maiores facilis delectus, distinctio quos provident! Dolores fuga cumque perspiciatis saepe. Aliquid placeat saepe temporibus deleniti eos eligendi.</section>
+
+    </main>
+
+
+</body>
+
+</html>

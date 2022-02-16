@@ -1,0 +1,88 @@
+
+html, body, header {padding: 0; margin: 0;}}
+
+$bgColor: rgba(121, 42, 121, 0.5);
+$blue0: rgb(4, 4, 60);
+$blue0linear: linear-gradient(45deg, $blue2, $blue0);
+$blue1: rgb(4, 4, 110);
+$blue2: rgb(4, 4, 170);
+$blue3: rgb(4, 4, 240);
+$blue4: rgb(76, 76, 236);
+$blue5: rgb(128, 128, 238);
+$blue6: rgb(188, 188, 241);
+$gray0: rgb(48, 46, 46);
+$gray1: rgb(88, 85, 85);
+$gray2: rgb(134, 128, 128);
+$gray3: rgb(163, 157, 157);
+$gray4: rgb(197, 190, 190);
+$orange0: rgb(196, 98, 0);
+$orange0linear: linear-gradient(45deg, $orange2, $orange0);
+$orange1: rgb(242, 121, 0);
+$orange2: rgb(255, 163, 1);
+$orange3: rgb(255, 180, 105);
+$orange4: rgb(255, 203, 151);
+$orange5: rgb(255, 232, 209);
+$orange6: rgb(255, 252, 249);
+$orange60deg: linear-gradient(60deg, $orange5, white, $orange5);
+$orangeST: rgba(224, 191, 158, 0.9);
+$size: 20px;
+* {font-family: cursive, "Pacifico", "Cairo", sans-serif; cursor: default;}
+.bg-orange {background: $orange5;}
+.bg-orange60deg {background: $orange60deg;}
+.btn {border: none;display: block; border-radius: 18px; padding: 5px 17px; color: #3b3b3b; font-size: 18px; box-shadow: 0 1px  3px $gray3, 0 1px 2px $gray3; transition: box-shadow 0.3s ease, transform 0.3 ease; cursor: pointer; background: #fff; overflow: hidden; white-space: nowrap; outline: none;}
+.centered {text-align: center;}
+.col-50 {flex: 2;}
+.dec {width: 80%; margin: 1em 10% 0 10%; text-align: justify;}
+.footer {background: $orangeST; color: $orange0;}
+.il {display: flex;}
+.just {text-align: justify;}
+.loader span {color: $blue5; text-shadow: 0 0 0 $blue5; -webkit-animation: loading 1s ease-in-out infinite alternate; animation: loading 1s ease-in-out infinite alternate;}
+.m-1 {margin: 1em;}
+.mb-1 {margin-bottom: 1em;}
+.mb-2 {margin-bottom: 2em;}
+.mb-3 {margin-bottom: 3em;}
+.mb-4 {margin-bottom: 4em;}
+.mb-5 {margin-bottom: 5em;}
+.mh-1 {margin: 1em 0;}
+.mh-2 {margin: 2em 0;}
+.mh-3 {margin: 3em 0;}
+.mh-4 {margin: 4em 0;}
+.ml-1 {margin-left: 1em;}
+.ml-2 {margin-left: 2em;}
+.ml-3 {margin-left: 3em;}
+.ml-4 {margin-left: 4em;}
+.ml-5 {margin-left: 5em;}
+.mr-1 {margin-right: 1em;}
+.mr-2 {margin-right: 2em;}
+.mr-3 {margin-right: 3em;}
+.mr-4 {margin-right: 4em;}
+.mr-5 {margin-right: 5em;}
+.p-1 {padding: 1em;}
+.pb-1 {padding-bottom: 1em;}
+.pb-2 {padding-bottom: 2em;}
+.pb-3 {padding-bottom: 3em;}
+.pb-4 {padding-bottom: 4em;}
+.ph-1 {padding: 1em 0;}
+.ph-2 {padding: 2em 0;}
+.ph-3 {padding: 3em 0;}
+.ph-4 {padding: 4em 0;}
+.resp {font-size: 1.2em; text-align: center; color: $blue5; margin-right: 0.5em;}
+.shadowed {text-shadow: 5px 5px 8px rgb(136, 134, 134);}
+.sticky-top {position: sticky; right: 0; top: 0; left: 0; z-index: 1030;}
+.superlink0 {color: inherit; transition: color 300ms; text-decoration: none; cursor: pointer; font-family: cursive; &:hover {color: $blue1; transition: color 300ms;}}
+.superlink1 {color: $blue6; transition: color 300ms; text-decoration: none; cursor: pointer; font-family: cursive; &:hover {color: $blue5; transition: color 300ms;}}
+.tr {background: $orange6; transition: background 200ms; &:hover {transition: background 200ms; background: $orange5;}}
+@for $i from 2 through 30 {.loader span:nth-child(#{$i}) {-webkit-animation-delay: ($i / 7 ) - 0.1s;}}
+@media screen and (max-width: 576px) {nav {ul li {display: block; margin: 2em;}} .resp {display: none;}}
+@media screen and (min-width: 577px) and (max-width: 992px) {nav {ul li {display: inline;}}}
+@media screen and (min-width: 993px) {nav {ul li {display: inline;}}}
+@-webkit-keyframes loading {to {text-shadow: 20px 0 70px $blue1; color: $blue2;}}
+body {background: $blue5;}
+
+button {appearance: auto; -webkit-writing-mode: horizontal-tb; text-rendering: auto; color: -internal-light-dark(black, white); letter-spacing: normal; word-spacing: normal; line-height: normal; text-transform: none; text-indent: 0; text-shadow: none; display: inline; text-align: center; align-items: flex-start; cursor: default; box-sizing: border-box; background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59)); margin: 0; padding: 1px 6px; border-width: 2px; border-style: outset; border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133)); border-image: initial; transition: box-shadow 0.3s ease, transform 0.2s ease; &:hover {box-shadow: 0 6px 3px $gray0, 0 1px 2px $gray0; transform: translate(0, -5px); transition: box-shadow 0.3s ease, transform 0.2s ease;}}
+
+nav {display: flex; flex-flow: row wrap; width: 100%; background: $blue0linear; justify-content: space-between; align-items: center; h1 {flex: 20%; width: 50%; padding: 0; text-align: center; padding: 0.4em; margin: 0; color: $blue6; font-size: 1.9em; margin-left: 1.6em; .logo {font-size: 5em;}} ul { list-style: none; li { a {font-size: 1.3em; text-decoration: none; padding: 0.3em; margin-right: 20px; color: $blue6; transition: 300ms all; border-radius: 30px; cursor: pointer; &:hover {color: $blue5; transition: 300ms all;}}}}}
+table, thead {border: 3px solid black;}
+table, tr, td {border-collapse: collapse; text-align: center; padding: 4px;}
+td {border: 1px solid black;}
+thead {background: $blue3; font-weight: bolder;}
